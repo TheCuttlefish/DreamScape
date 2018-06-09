@@ -39,10 +39,8 @@ public class Player : MonoBehaviour {
 		transform.Rotate (Vector3.Dot (Vector3.up, transform.forward), 0, Vector3.Dot (Vector3.up, -transform.right));
 		//transform.Rotate (0,Vector3.Dot (Vector3.forward, transform.right), 0); // - code for left right correction
 	}
+
 	void Update () {
-	
-	}
-	void FixedUpdate () {
 		Movement ();
 
 	}

@@ -47,8 +47,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalTexture:
-        m_Texture: {fileID: 2800000, guid: 37f55aee53d24744d85344d59197d6cf, type: 3}
-        m_Scale: {x: 25, y: 20}
+        m_Texture: {fileID: 2800000, guid: ddf7730e7baa1d74f8502918661fecc5, type: 3}
+        m_Scale: {x: 40, y: 35}
         m_Offset: {x: 0, y: 2}
     - _OcclusionMap:
         m_Texture: {fileID: 0}
@@ -67,15 +67,15 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _Gloss: 0.65
+    - _Gloss: 0.611
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Metallic: 0.03
+    - _Metallic: 0.618
     - _Mode: 0
-    - _NormalScale: 1.65
-    - _NormalSpeed: 0.15
-    - _NormalSpeed2: 0.1915195
+    - _NormalScale: 0.57
+    - _NormalSpeed: 0.045
+    - _NormalSpeed2: 0.109
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
@@ -86,8 +86,8 @@ Material:
     - _nnnnnnn: 0.06
     - _node_1795: 0.87
     - _node_7968: 0.06
-    - _vertexamount: 0.1
-    - _vertexscale: 0.1
+    - _vertexamount: 0.2
+    - _vertexscale: 0.01
     m_Colors:
     - _Color: {r: 0.5611484, g: 0.7120779, b: 0.78676474, a: 1}
     - _Colour: {r: 0.12543254, g: 0.41588098, b: 0.58823526, a: 1}
