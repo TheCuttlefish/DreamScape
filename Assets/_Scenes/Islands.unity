@@ -2117,6 +2117,7 @@ GameObject:
   - component: {fileID: 495543754}
   - component: {fileID: 495543753}
   - component: {fileID: 495543752}
+  - component: {fileID: 495543757}
   - component: {fileID: 495543756}
   m_Layer: 0
   m_Name: Cam
@@ -2200,6 +2201,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   profile: {fileID: 11400000, guid: 356e239835c0fc84a8d5682154508c93, type: 2}
+--- !u!114 &495543757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 495543751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d908193a717c744d87b97d103ec1e6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transition: 0.01
+  warpSpeed: 0.23
 --- !u!1001 &517851321
 Prefab:
   m_ObjectHideFlags: 0
