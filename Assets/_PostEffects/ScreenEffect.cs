@@ -10,12 +10,33 @@ public class ScreenEffect : MonoBehaviour {
 	public float warpSpeed;
 	public bool uvWarp;
 	private Material material;
+	private GameObject player;
 
 	// Creates a private material used to the effect
 	void Awake () {
 
+		player = GameObject.Find ("Player");
 		material = new Material (Shader.Find ("Shader Forge/Overlay"));
 
+	}
+
+	float newTransValue;
+	void Update () {
+
+		float dist = Vector3.Distance (player.transform.position, Vector3.zero);
+
+		if (dist < 150) {
+			newTransValue = 0f;
+		}
+
+		if (dist > 150 && dist < 180) {
+			newTransValue = 0.01f;
+		}
+		if (dist > 180) {
+			newTransValue = 0.2f;
+		}
+
+		transition -= (transition - newTransValue) / 50;
 	}
 
 	// Postprocess the image

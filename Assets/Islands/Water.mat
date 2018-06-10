@@ -86,7 +86,7 @@ Material:
     - _nnnnnnn: 0.06
     - _node_1795: 0.87
     - _node_7968: 0.06
-    - _vertexamount: 0.2
+    - _vertexamount: 0.15
     - _vertexscale: 0.01
     m_Colors:
     - _Color: {r: 0.5611484, g: 0.7120779, b: 0.78676474, a: 1}
