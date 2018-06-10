@@ -8,6 +8,7 @@ public class ScreenEffect : MonoBehaviour {
 	public float transition;
 	[Range (0.0f, 1.0f)]
 	public float warpSpeed;
+	public bool uvWarp;
 	private Material material;
 
 	// Creates a private material used to the effect
@@ -25,6 +26,15 @@ public class ScreenEffect : MonoBehaviour {
 		}
 		material.SetFloat ("_rotationspeed", warpSpeed);
 		material.SetFloat ("_amount", transition);
+
+		material.SetFloat ("_hueSlide", uvWarpFloat ());
 		Graphics.Blit (source, destination, material);
 	}
+
+	float uvWarpFloat () {
+
+		if (uvWarp) return 1;
+		else return 0;
+	}
+
 }
