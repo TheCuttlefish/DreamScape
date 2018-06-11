@@ -29,11 +29,14 @@ public class ScreenEffect : MonoBehaviour {
 			newTransValue = 0f;
 		}
 
-		if (dist > 150 && dist < 180) {
+		if (dist > 150 && dist < 170) {
 			newTransValue = 0.01f;
 		}
-		if (dist > 180) {
+		if (dist > 170 && dist < 179) {
 			newTransValue = 0.2f;
+		}
+		if (dist > 180) {
+			//end the stage
 		}
 
 		transition -= (transition - newTransValue) / 50;
