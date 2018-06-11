@@ -20,15 +20,18 @@ public class ScreenEffect : MonoBehaviour {
 
 	}
 
-	float newTransValue;
 	void Update () {
+		CheckDistance ();
+	}
 
+	float newTransValue;
+
+	void CheckDistance () {
 		float dist = Vector3.Distance (player.transform.position, Vector3.zero);
 
 		if (dist < 150) {
 			newTransValue = 0f;
 		}
-
 		if (dist > 150 && dist < 170) {
 			newTransValue = 0.01f;
 		}
