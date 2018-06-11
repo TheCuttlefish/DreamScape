@@ -29,10 +29,10 @@ public class ScreenEffect : MonoBehaviour {
 	void CheckDistance () {
 		float dist = Vector3.Distance (player.transform.position, Vector3.zero);
 
-		if (dist < 150) {
+		if (dist < 145) {
 			newTransValue = 0f;
 		}
-		if (dist > 150 && dist < 170) {
+		if (dist > 145 && dist < 170) {
 			newTransValue = 0.01f;
 		}
 		if (dist > 170 && dist < 179) {

@@ -10,7 +10,7 @@ Material:
   m_Shader: {fileID: 4800000, guid: 34b712df653cb8a47a497c2529376c7e, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
+  m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -56,7 +56,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _node_748:
         m_Texture: {fileID: 2800000, guid: 48558a3a7ade4b64c918b59c66208271, type: 3}
-        m_Scale: {x: 6, y: 8}
+        m_Scale: {x: 3, y: 3}
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BumpScale: 1
@@ -78,12 +78,15 @@ Material:
     - _ZWrite: 1
     - _alpha: 0.758
     - _node_183: 5
+    - _node_2465: 0.101
     - _node_6749: 0.007
     - _node_8153: 0
-    - _node_8564: 1.27
+    - _node_8564: 1.73
     - _noise: 3.53
+    - _outlinethickness: 0.023
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _node_2381: {r: 0.52510154, g: 0.8014706, b: 0, a: 1}
     - _node_7243: {r: 0.21541585, g: 0.5294118, b: 0, a: 1}
+    - _outlinecolour: {r: 0.19269778, g: 0.29411763, b: 0, a: 1}
