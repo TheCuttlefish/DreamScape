@@ -36,7 +36,7 @@ public class Player : MonoBehaviour {
 		transform.Translate (0, 0, moveForward, Space.Self);
 		transform.Rotate (Input.GetAxis ("Vertical") * 1.0f, Input.GetAxis ("Horizontal") * 1.0f, 0);
 		//correction
-		transform.Rotate (Vector3.Dot (Vector3.up, transform.forward), 0, Vector3.Dot (Vector3.up, -transform.right));
+		transform.Rotate (Vector3.Dot (Vector3.up, transform.forward)/10, 0, Vector3.Dot (Vector3.up, -transform.right)/2);
 		//transform.Rotate (0,Vector3.Dot (Vector3.forward, transform.right), 0); // - code for left right correction
 	}
 

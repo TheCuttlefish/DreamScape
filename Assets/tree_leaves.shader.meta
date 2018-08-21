@@ -5,7 +5,7 @@ licenseType: Free
 ShaderImporter:
   externalObjects: {}
   defaultTextures:
-  - _node_748: {fileID: 2800000, guid: 28c7aad1372ff114b90d330f8a2dd938, type: 3}
+  - _noise_tex: {fileID: 2800000, guid: 28c7aad1372ff114b90d330f8a2dd938, type: 3}
   userData: 
   assetBundleName: 
   assetBundleVariant: 

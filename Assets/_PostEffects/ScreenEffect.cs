@@ -4,11 +4,10 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class ScreenEffect : MonoBehaviour {
 
+	public bool debug = false;
 	[Range (0.0f, 1.0f)]
 	public float transition;
-	[Range (0.0f, 1.0f)]
-	public float warpSpeed;
-	public bool uvWarp;
+	public ScreenWarp screenWarp;
 	private Material material;
 	private GameObject player;
 
@@ -18,6 +17,9 @@ public class ScreenEffect : MonoBehaviour {
 		player = GameObject.Find ("Player");
 		material = new Material (Shader.Find ("Shader Forge/Overlay"));
 
+		material.SetTexture ("_MainTex", screenWarp.screenMap);
+		material.SetTexture ("_uv_distortion", screenWarp.noiseMap);
+		material.SetColor ("_fadeColour", screenWarp.fadeColour);
 	}
 
 	void Update () {
@@ -25,24 +27,24 @@ public class ScreenEffect : MonoBehaviour {
 	}
 
 	float newTransValue;
-
+///this should be somewhere else!!
 	void CheckDistance () {
 		float dist = Vector3.Distance (player.transform.position, Vector3.zero);
 
-		if (dist < 145) {
-			newTransValue = 0f;
+		if (dist < 125) {
+			newTransValue = 0.0001f;
 		}
-		if (dist > 145 && dist < 170) {
-			newTransValue = 0.01f;
+		if (dist > 125 && dist < 170) {
+			newTransValue = screenWarp.transitionEnterValue;
 		}
 		if (dist > 170 && dist < 179) {
-			newTransValue = 0.2f;
+			newTransValue = screenWarp.transitionExitValue; 
 		}
 		if (dist > 180) {
 			//end the stage
 		}
-
-		transition -= (transition - newTransValue) / 50;
+		if (!debug)
+			transition -= (transition - newTransValue) / 50;
 	}
 
 	// Postprocess the image
@@ -51,17 +53,17 @@ public class ScreenEffect : MonoBehaviour {
 			Graphics.Blit (source, destination);
 			return;
 		}
-		material.SetFloat ("_rotationspeed", warpSpeed);
+
 		material.SetFloat ("_amount", transition);
+		material.SetFloat ("_fadeAmount", screenWarp.fade);
+		//uv distortion
+		material.SetFloat ("_hueAmount", screenWarp.uvWarp);
 
-		material.SetFloat ("_hueSlide", uvWarpFloat ());
+		//rotation
+		if (screenWarp.rotation) material.SetFloat ("_rotationspeed", screenWarp.rotationSpeed);
+		else material.SetFloat ("_rotationspeed", 0);
+
 		Graphics.Blit (source, destination, material);
-	}
-
-	float uvWarpFloat () {
-
-		if (uvWarp) return 1;
-		else return 0;
 	}
 
 }
