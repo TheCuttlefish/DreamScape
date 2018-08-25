@@ -20,14 +20,19 @@ public class ScreenEffect : MonoBehaviour {
 		material.SetTexture ("_MainTex", screenWarp.screenMap);
 		material.SetTexture ("_uv_distortion", screenWarp.noiseMap);
 		material.SetColor ("_fadeColour", screenWarp.fadeColour);
+		screenWarp.fade = 1;
 	}
 
 	void Update () {
 		CheckDistance ();
+
+		if (screenWarp.fade > 0.006f){
+			screenWarp.fade -= 0.006f;
+		}
 	}
 
 	float newTransValue;
-///this should be somewhere else!!
+	///this should be somewhere else!!
 	void CheckDistance () {
 		float dist = Vector3.Distance (player.transform.position, Vector3.zero);
 
@@ -38,7 +43,7 @@ public class ScreenEffect : MonoBehaviour {
 			newTransValue = screenWarp.transitionEnterValue;
 		}
 		if (dist > 170 && dist < 179) {
-			newTransValue = screenWarp.transitionExitValue; 
+			newTransValue = screenWarp.transitionExitValue;
 		}
 		if (dist > 180) {
 			//end the stage
@@ -49,10 +54,9 @@ public class ScreenEffect : MonoBehaviour {
 
 	// Postprocess the image
 	void OnRenderImage (RenderTexture source, RenderTexture destination) {
-		if (transition == 0) {
+		
 			Graphics.Blit (source, destination);
-			return;
-		}
+		
 
 		material.SetFloat ("_amount", transition);
 		material.SetFloat ("_fadeAmount", screenWarp.fade);

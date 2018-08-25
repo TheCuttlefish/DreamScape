@@ -62,8 +62,8 @@ Shader "Shader Forge/Overlay" {
             float4 frag(VertexOutput i) : COLOR {
 ////// Lighting:
 ////// Emissive:
-                float4 node_9523 = _Time;
-                float node_6628_ang = node_9523.g;
+                float4 node_6335 = _Time;
+                float node_6628_ang = node_6335.g;
                 float node_6628_spd = _rotationspeed;
                 float node_6628_cos = cos(node_6628_spd*node_6628_ang);
                 float node_6628_sin = sin(node_6628_spd*node_6628_ang);
