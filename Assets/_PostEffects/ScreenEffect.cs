@@ -10,6 +10,8 @@ public class ScreenEffect : MonoBehaviour {
 	public ScreenWarp screenWarp;
 	private Material material;
 	private GameObject player;
+	private bool fadeOnStart = true;
+	private bool fadeOnExit = false;
 
 	// Creates a private material used to the effect
 	void Awake () {
@@ -25,9 +27,25 @@ public class ScreenEffect : MonoBehaviour {
 
 	void Update () {
 		CheckDistance ();
+		Fade ();
+	}
 
-		if (screenWarp.fade > 0.006f){
-			screenWarp.fade -= 0.006f;
+	void Fade () {
+
+		if (fadeOnStart) {
+			if (screenWarp.fade > 0.006f) {
+				screenWarp.fade -= 0.006f;
+			} else {
+				screenWarp.fade = 0;
+				fadeOnStart = false;
+			}
+		}
+
+		if (fadeOnExit) {
+			screenWarp.fade += 0.006f;
+			if(screenWarp.fade > 1){
+				Application.LoadLevel(1);
+			}
 		}
 	}
 
@@ -37,7 +55,7 @@ public class ScreenEffect : MonoBehaviour {
 		float dist = Vector3.Distance (player.transform.position, Vector3.zero);
 
 		if (dist < 125) {
-			newTransValue = 0.0001f;
+			newTransValue = 0.005f;
 		}
 		if (dist > 125 && dist < 170) {
 			newTransValue = screenWarp.transitionEnterValue;
@@ -46,6 +64,7 @@ public class ScreenEffect : MonoBehaviour {
 			newTransValue = screenWarp.transitionExitValue;
 		}
 		if (dist > 180) {
+			fadeOnExit = true;
 			//end the stage
 		}
 		if (!debug)
@@ -54,9 +73,8 @@ public class ScreenEffect : MonoBehaviour {
 
 	// Postprocess the image
 	void OnRenderImage (RenderTexture source, RenderTexture destination) {
-		
-			Graphics.Blit (source, destination);
-		
+
+		Graphics.Blit (source, destination);
 
 		material.SetFloat ("_amount", transition);
 		material.SetFloat ("_fadeAmount", screenWarp.fade);
