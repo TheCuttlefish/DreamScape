@@ -22,3 +22,8 @@ MonoBehaviour:
     settings:
       rotationRange: {x: 0, y: 0}
       scaleRange: {x: 0, y: 0}
+  - gameObject: {fileID: 1186269884020248, guid: 881c3f01c9639a449be9248c45ea4161,
+      type: 2}
+    settings:
+      rotationRange: {x: 0, y: 0}
+      scaleRange: {x: 0, y: 0}

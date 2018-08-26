@@ -4,16 +4,12 @@ using UnityEngine;
 
 public class CamMovement : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
+	public float speed = 0.01f;
 	// Update is called once per frame
 	void Update () {
-		transform.Translate(0,0,0.3f);
-		if(transform.position.z > 10){
-			Application.LoadLevel(0);
+		transform.Translate (0, 0, speed);
+		if (transform.position.z > 0) {
+			Application.LoadLevel (0);
 		}
 	}
 }
