@@ -15,8 +15,8 @@ MonoBehaviour:
   noiseMap: {fileID: 2800000, guid: ac3d03b427beb5246b129bb38e2a30cf, type: 3}
   rotation: 1
   rotationSpeed: 0.128
-  uvWarp: 0
+  uvWarp: 0.443
   fadeColour: {r: 0, g: 0, b: 0, a: 1}
-  fade: 0
-  transitionEnterValue: 0
-  transitionExitValue: 0
+  fade: 0.98800004
+  transitionEnterValue: 0.136
+  transitionExitValue: 1

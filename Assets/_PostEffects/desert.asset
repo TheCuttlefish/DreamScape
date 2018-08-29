@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 000fa2304b05b794f8c08a18edefd50e, type: 3}
+  m_Name: desert
+  m_EditorClassIdentifier: 
+  screenMap: {fileID: 2800000, guid: f68eeff1477aa3240b7a44fbdc0dbeb9, type: 3}
+  noiseMap: {fileID: 2800000, guid: d554b4f09b3bb584f94b34684d28ebcf, type: 3}
+  rotation: 1
+  rotationSpeed: 0.093
+  uvWarp: 1
+  fadeColour: {r: 0, g: 0, b: 0, a: 1}
+  fade: 0.94600016
+  transitionEnterValue: 0.043
+  transitionExitValue: 0.371
