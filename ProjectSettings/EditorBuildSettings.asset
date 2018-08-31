@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Scenes/Islands.unity
+    path: Assets/[DreamScapes]/_Scenes/Islands.unity
     guid: b5628140b895a6f49839fc11ae69dfb6
   - enabled: 1
-    path: Assets/_Scenes/transition.unity
+    path: Assets/[DreamScapes]/_Scenes/transition.unity
     guid: 39ac7c0e3bcb8ce4f987f397a984bff8

@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 70b1f415665113c4b9ef9e7ef559dd93
+timeCreated: 1526234155
+licenseType: Free
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _ringtexture: {fileID: 2800000, guid: 9a2282d0b63fea64dbafa068d6d6e0ea, type: 3}
+  - _node_3861: {fileID: 2800000, guid: d766ed6f6b60f174faa47797189cfd00, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
