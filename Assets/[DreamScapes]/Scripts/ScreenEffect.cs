@@ -1,6 +1,6 @@
 ﻿using System.Collections;
-using UnityEngine.SceneManagement;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [ExecuteInEditMode]
 public class ScreenEffect : MonoBehaviour {
@@ -75,17 +75,16 @@ public class ScreenEffect : MonoBehaviour {
 	// Postprocess the image
 	void OnRenderImage (RenderTexture source, RenderTexture destination) {
 
-		Graphics.Blit (source, destination);
+		
+				m_material.SetFloat ("_amount", transition);
+				m_material.SetFloat ("_fadeAmount", screenWarp.fade);
+				//uv distortion
+				m_material.SetFloat ("_hueAmount", screenWarp.uvWarp);
 
-		m_material.SetFloat ("_amount", transition);
-		m_material.SetFloat ("_fadeAmount", screenWarp.fade);
-		//uv distortion
-		m_material.SetFloat ("_hueAmount", screenWarp.uvWarp);
-
-		//rotation
-		if (screenWarp.rotation) m_material.SetFloat ("_rotationspeed", screenWarp.rotationSpeed);
-		else m_material.SetFloat ("_rotationspeed", 0);
-
+				//rotation
+				if (screenWarp.rotation) m_material.SetFloat ("_rotationspeed", screenWarp.rotationSpeed);
+				else m_material.SetFloat ("_rotationspeed", 0);
+		
 		Graphics.Blit (source, destination, m_material);
 	}
 
