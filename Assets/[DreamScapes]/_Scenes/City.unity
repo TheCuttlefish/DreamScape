@@ -45079,7 +45079,7 @@ Prefab:
     - target: {fileID: 114153282991380992, guid: 04582b498a4b6ff4888d108785a9c7b3,
         type: 2}
       propertyPath: transition
-      value: 0.9801
+      value: 0.88641316
       objectReference: {fileID: 0}
     - target: {fileID: 114153282991380992, guid: 04582b498a4b6ff4888d108785a9c7b3,
         type: 2}
@@ -45102,6 +45102,12 @@ Prefab:
       propertyPath: maxSpeed
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 114153282991380992, guid: 04582b498a4b6ff4888d108785a9c7b3,
+        type: 2}
+      propertyPath: settings
+      value: 
+      objectReference: {fileID: 11400000, guid: c774a6015c655b645b000e7537e4dfe6,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 04582b498a4b6ff4888d108785a9c7b3, type: 2}
   m_IsPrefabParent: 0

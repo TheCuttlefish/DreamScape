@@ -19,4 +19,6 @@ public class ScreenWarp : ScriptableObject {
 	public float transitionEnterValue = 0.01f;
 	[Range (0, 1)]
 	public float transitionExitValue = 0.3f;
+
+	public int screenMode  = 0;
 }

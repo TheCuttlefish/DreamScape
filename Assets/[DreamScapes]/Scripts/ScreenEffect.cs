@@ -9,6 +9,7 @@ public class ScreenEffect : MonoBehaviour {
 	[Range (0.0f, 1.0f)]
 	public float transition;
 	public ScreenWarp screenWarp;
+	public SettingsComponent settings;
 	private Material m_material;
 	private GameObject player;
 	private bool fadeOnStart = true;
@@ -75,6 +76,8 @@ public class ScreenEffect : MonoBehaviour {
 
 	// Postprocess the image
 	void OnRenderImage (RenderTexture source, RenderTexture destination) {
+
+		m_material.SetFloat ("_orangeValue", settings.blueLightControl);
 
 		m_material.SetFloat ("_amount", transition);
 		m_material.SetFloat ("_fadeAmount", screenWarp.fade);
