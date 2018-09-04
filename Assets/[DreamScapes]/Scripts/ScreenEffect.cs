@@ -13,6 +13,7 @@ public class ScreenEffect : MonoBehaviour {
 	private GameObject player;
 	private bool fadeOnStart = true;
 	private bool fadeOnExit = false;
+	private float transitionSpeed = 0.007f;
 
 	// Creates a private material used to the effect
 	void Awake () {
@@ -34,8 +35,8 @@ public class ScreenEffect : MonoBehaviour {
 	void Fade () {
 
 		if (fadeOnStart) {
-			if (screenWarp.fade > 0.006f) {
-				screenWarp.fade -= 0.006f;
+			if (screenWarp.fade > transitionSpeed) {
+				screenWarp.fade -= transitionSpeed;
 			} else {
 				screenWarp.fade = 0;
 				fadeOnStart = false;
@@ -43,7 +44,7 @@ public class ScreenEffect : MonoBehaviour {
 		}
 
 		if (fadeOnExit) {
-			screenWarp.fade += 0.006f;
+			screenWarp.fade += transitionSpeed;
 			if (screenWarp.fade > 1) {
 				SceneManager.LoadScene (1);
 			}
@@ -55,16 +56,16 @@ public class ScreenEffect : MonoBehaviour {
 	void CheckDistance () {
 		float dist = Vector3.Distance (player.transform.position, Vector3.zero);
 
-		if (dist < 125) {
+		if (dist < 170) {
 			newTransValue = 0.005f;
 		}
-		if (dist > 125 && dist < 170) {
+		if (dist > 170 && dist < 180) {
 			newTransValue = screenWarp.transitionEnterValue;
 		}
-		if (dist > 170 && dist < 179) {
+		if (dist > 180) {
 			newTransValue = screenWarp.transitionExitValue;
 		}
-		if (dist > 175) {
+		if (dist > 180) {
 			fadeOnExit = true;
 			//end the stage
 		}
@@ -75,16 +76,15 @@ public class ScreenEffect : MonoBehaviour {
 	// Postprocess the image
 	void OnRenderImage (RenderTexture source, RenderTexture destination) {
 
-		
-				m_material.SetFloat ("_amount", transition);
-				m_material.SetFloat ("_fadeAmount", screenWarp.fade);
-				//uv distortion
-				m_material.SetFloat ("_hueAmount", screenWarp.uvWarp);
+		m_material.SetFloat ("_amount", transition);
+		m_material.SetFloat ("_fadeAmount", screenWarp.fade);
+		//uv distortion
+		m_material.SetFloat ("_hueAmount", screenWarp.uvWarp);
 
-				//rotation
-				if (screenWarp.rotation) m_material.SetFloat ("_rotationspeed", screenWarp.rotationSpeed);
-				else m_material.SetFloat ("_rotationspeed", 0);
-		
+		//rotation
+		if (screenWarp.rotation) m_material.SetFloat ("_rotationspeed", screenWarp.rotationSpeed);
+		else m_material.SetFloat ("_rotationspeed", 0);
+
 		Graphics.Blit (source, destination, m_material);
 	}
 
