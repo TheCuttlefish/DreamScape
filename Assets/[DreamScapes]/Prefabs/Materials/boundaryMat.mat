@@ -12,7 +12,7 @@ Material:
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 3005
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
@@ -92,7 +92,7 @@ Material:
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 0
-    - _alphaamount: 0.7
+    - _alphaamount: 1
     - _depthValue: 26
     - _node_342: 0
     - _node_4311: 41.91185
