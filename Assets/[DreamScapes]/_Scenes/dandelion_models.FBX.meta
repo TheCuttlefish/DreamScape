@@ -1,17 +1,28 @@
 fileFormatVersion: 2
-guid: 4e4badba205550441800ff2b4edc1e61
-timeCreated: 1536621452
+guid: 3c8b5fa1a782a1d43acf869131fca9bb
+timeCreated: 1536714851
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: 02 - Default
-    2100002: 'Material #3'
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Cylinder003
+    100000: dandelion1
+    100002: dandelion2
+    100004: dandelion3
+    100006: //RootNode
+    400000: dandelion1
+    400002: dandelion2
+    400004: dandelion3
+    400006: //RootNode
+    2100000: 'Material #49'
+    2300000: dandelion1
+    2300002: dandelion2
+    2300004: dandelion3
+    3300000: dandelion1
+    3300002: dandelion2
+    3300004: dandelion3
+    4300000: dandelion2
+    4300002: dandelion3
+    4300004: dandelion1
     9500000: //RootNode
   externalObjects: {}
   materials:

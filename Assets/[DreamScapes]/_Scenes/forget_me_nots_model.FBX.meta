@@ -1,49 +1,16 @@
 fileFormatVersion: 2
-guid: a6d1a0446f0e1f14baadc08975f50d37
-timeCreated: 1536623425
+guid: abfc6e34eeb06fd49884a4c455960180
+timeCreated: 1536717583
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: bamboo_1
-    100002: bamboo_2
-    100004: bamboo_3
-    100006: bamboo_5
-    100008: bamboo_6
-    100010: //RootNode
-    100012: branch
-    100014: branch2
-    400000: bamboo_1
-    400002: bamboo_2
-    400004: bamboo_3
-    400006: bamboo_5
-    400008: bamboo_6
-    400010: //RootNode
-    400012: branch
-    400014: branch2
-    2100000: bamboo_stem
-    2100002: bamboo_leaves
-    2300000: bamboo_1
-    2300002: bamboo_2
-    2300004: bamboo_3
-    2300006: bamboo_5
-    2300008: bamboo_6
-    2300010: branch
-    2300012: branch2
-    3300000: bamboo_1
-    3300002: bamboo_2
-    3300004: bamboo_3
-    3300006: bamboo_5
-    3300008: bamboo_6
-    3300010: branch
-    3300012: branch2
-    4300000: bamboo_6
-    4300002: bamboo_2
-    4300004: bamboo_1
-    4300006: bamboo_5
-    4300008: bamboo_3
-    4300010: branch
-    4300012: branch2
+    100000: //RootNode
+    400000: //RootNode
+    2100000: 'Material #50'
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: forget-me-not
     9500000: //RootNode
   externalObjects: {}
   materials:
@@ -75,7 +42,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 3
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
@@ -96,8 +63,8 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
-    normalSmoothAngle: 180
-    normalImportMode: 1
+    normalSmoothAngle: 60
+    normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
   importAnimation: 1
