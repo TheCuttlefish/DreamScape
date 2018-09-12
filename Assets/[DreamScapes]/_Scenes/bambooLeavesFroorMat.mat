@@ -55,7 +55,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _bamboo:
-        m_Texture: {fileID: 2800000, guid: 29b5ade739ebc4043acc31936fef01a5, type: 3}
+        m_Texture: {fileID: 2800000, guid: fb04c3920a5482f4aac8958fc08ebc06, type: 3}
         m_Scale: {x: 100, y: 100}
         m_Offset: {x: 0, y: 0}
     - _node_7065:
@@ -80,13 +80,16 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     - _angle: 42.9
-    - _lerp: 0.217
+    - _lerp: 0.69
     - _node_2893: 0
     - _scale: 1.87
-    - _scale0: 4.75
-    - _scale1: 3.69
-    - _scale2: 4.25
+    - _scale0: 3.18
+    - _scale1: 4.53
+    - _scale2: 4.26
     m_Colors:
-    - _Color: {r: 0.5661765, g: 0.24599394, b: 0, a: 1}
+    - _Color: {r: 0.21323532, g: 0.21323532, b: 0.21323532, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _bg: {r: 0.28176227, g: 0.28676468, b: 0.19609644, a: 1}
+    - _leaves1: {r: 0.30882353, g: 0.28076008, b: 0.16349481, a: 1}
+    - _leaves2: {r: 0.43382353, g: 0.39994478, b: 0.210532, a: 1}
+    - _leaves3: {r: 0.22794116, g: 0.0990365, b: 0, a: 1}
