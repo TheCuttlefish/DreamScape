@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: acae575dc4994664a9660f785491e431
+timeCreated: 1536714662
+licenseType: Free
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _bamboo: {fileID: 2800000, guid: 29b5ade739ebc4043acc31936fef01a5, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
