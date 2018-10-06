@@ -20,5 +20,5 @@ public class ScreenWarp : ScriptableObject {
 	[Range (0, 1)]
 	public float transitionExitValue = 0.3f;
 
-	public int screenMode  = 0;
+	public int screenMode  = 0;//not used?
 }

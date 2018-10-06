@@ -17,7 +17,7 @@ MonoBehaviour:
   rotationSpeed: 0.128
   uvWarp: 0.443
   fadeColour: {r: 0, g: 0, b: 0, a: 1}
-  fade: 0.98800004
-  transitionEnterValue: 0.136
+  fade: 0.99700004
+  transitionEnterValue: 0.194
   transitionExitValue: 1
   screenMode: 0

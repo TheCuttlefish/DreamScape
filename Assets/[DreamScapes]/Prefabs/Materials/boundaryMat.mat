@@ -93,13 +93,13 @@ Material:
     - _UVSec: 0
     - _ZWrite: 0
     - _alphaamount: 1
-    - _depthValue: 26
+    - _depthValue: 25.1
     - _node_342: 0
     - _node_4311: 41.91185
     - _node_819: 0.14
     - _node_8436: 0.0023
     - _node_8896: 0
-    - _outlinepower: 2
+    - _outlinepower: 0.378
     - _speed: 0.01
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}

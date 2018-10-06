@@ -9,5 +9,8 @@ EditorBuildSettings:
     path: Assets/[DreamScapes]/_Scenes/Islands.unity
     guid: b5628140b895a6f49839fc11ae69dfb6
   - enabled: 1
-    path: Assets/[DreamScapes]/_Scenes/transition.unity
+    path: Assets/[DreamScapes]/_Scenes/Fields.unity
+    guid: 5e635c063cf26c641bac0b5f56a2497b
+  - enabled: 1
+    path: Assets/[DreamScapes]/_Scenes/Transition.unity
     guid: 39ac7c0e3bcb8ce4f987f397a984bff8
