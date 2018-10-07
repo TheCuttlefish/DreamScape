@@ -15,7 +15,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 8
-  m_Fog: 0
+  m_Fog: 1
   m_FogColor: {r: 0.72156864, g: 0.9058824, b: 1, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.005
@@ -12072,7 +12072,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d908193a717c744d87b97d103ec1e6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transition: 0.1959725
+  transition: 0.17324841
   screenWarp: {fileID: 11400000, guid: 47d6bd2e2d732944183cd960cf803a03, type: 2}
   settings: {fileID: 11400000, guid: c774a6015c655b645b000e7537e4dfe6, type: 2}
 --- !u!114 &469944441
@@ -33960,7 +33960,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: ad0e8a3d4dbeee049b6ae267e8896973, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: ad0e8a3d4dbeee049b6ae267e8896973, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -33968,7 +33968,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: ad0e8a3d4dbeee049b6ae267e8896973, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9500000, guid: ad0e8a3d4dbeee049b6ae267e8896973, type: 3}

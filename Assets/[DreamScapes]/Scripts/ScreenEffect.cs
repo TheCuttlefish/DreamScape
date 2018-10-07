@@ -9,11 +9,14 @@ public class ScreenEffect : MonoBehaviour {
 	public float transition;
 	public ScreenWarp screenWarp;
 	public SettingsComponent settings;
+
 	private Material m_material;
 	private GameObject player;
 	private bool fadeOnStart = true;
 	private bool fadeOnExit = false;
 	private float transitionSpeed = 0.002f;
+
+	private bool exitLevel = false;
 
 	// Creates a private material used to the effect
 	void Awake () {
@@ -30,8 +33,17 @@ public class ScreenEffect : MonoBehaviour {
 	void Update () {
 		CheckDistance ();
 		Fade ();
+
+		if (exitLevel) {
+			newTransValue = screenWarp.transitionExitValue;
+			transition -= (transition - newTransValue) / 200; //transition effect speed
+			fadeOnExit = true;
+		}
 	}
 
+	public void FadeOutLevel () {
+		exitLevel = true;
+	}
 	void Fade () {
 
 		if (fadeOnStart) {
@@ -69,7 +81,6 @@ public class ScreenEffect : MonoBehaviour {
 			transition -= (transition - newTransValue) / 200; //transition effect speed
 			fadeOnExit = true;
 		}
-
 
 	}
 

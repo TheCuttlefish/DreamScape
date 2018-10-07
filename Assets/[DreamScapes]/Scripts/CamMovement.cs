@@ -12,7 +12,7 @@ public class CamMovement : MonoBehaviour {
 	void Update () {
 		transform.Translate (0, 0, speed);
 		if (transform.position.z > 0) {
-			SceneManager.LoadScene (Random.RandomRange(0,2));
+			SceneManager.LoadScene (Random.Range(0,2));
 		}
 	}
 }
