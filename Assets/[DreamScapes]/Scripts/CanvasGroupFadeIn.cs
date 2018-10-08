@@ -16,6 +16,7 @@ public class CanvasGroupFadeIn : MonoBehaviour {
 	}
 
 	public void FadeOut () {
+		fadeIn = false;
 		fadeOut = true;
 	}
 	// Update is called once per frame
@@ -23,7 +24,7 @@ public class CanvasGroupFadeIn : MonoBehaviour {
 
 		if (fadeIn) {
 			if (canvasAlpha < 1) {
-				canvasAlpha += 0.006f;
+				canvasAlpha += 0.6f * Time.deltaTime;
 			} else {
 				fadeIn = false;
 			}
@@ -31,9 +32,9 @@ public class CanvasGroupFadeIn : MonoBehaviour {
 
 		if (fadeOut) {
 			if (canvasAlpha > 0) {
-				canvasAlpha -= 0.006f;
+				canvasAlpha -= 0.6f * Time.deltaTime;
 			} else {
-				SceneManager.LoadScene ("Transition");
+
 				fadeOut = false;
 			}
 		}

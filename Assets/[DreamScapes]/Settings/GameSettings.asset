@@ -11,4 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1472994bdf63ce43b2f551880a0b3ee, type: 3}
   m_Name: GameSettings
   m_EditorClassIdentifier: 
-  blueLightControl: 0.5
+  blueLightControl: 0.33
+  scenes:
+  - Islands
+  - Fields
+  - Desert
+  - City
+  - BambooForest

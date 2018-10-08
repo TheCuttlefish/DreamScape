@@ -14,13 +14,17 @@ public class ScreenEffect : MonoBehaviour {
 	private GameObject player;
 	private bool fadeOnStart = true;
 	private bool fadeOnExit = false;
-	private float transitionSpeed = 0.002f;
+	private float fadeSpeed = 0.2f; //black screen fade speed
+	private float screenEffectTimer = 2f;
+	private float screenEffectWarningTimer = 1f;
+	private string nextSceneName = "none";
 
 	private bool exitLevel = false;
 
 	// Creates a private material used to the effect
 	void Awake () {
 
+		transition = 1;
 		player = GameObject.Find ("Player");
 		m_material = new Material (Shader.Find ("Shader Forge/Overlay"));
 
@@ -33,7 +37,7 @@ public class ScreenEffect : MonoBehaviour {
 	void Update () {
 		CheckDistance ();
 		Fade ();
-
+		Debug ();
 		if (exitLevel) {
 			newTransValue = screenWarp.transitionExitValue;
 			transition -= (transition - newTransValue) / 200; //transition effect speed
@@ -41,14 +45,16 @@ public class ScreenEffect : MonoBehaviour {
 		}
 	}
 
-	public void FadeOutLevel () {
+	public void FadeOutLevel (string scene = "none") {
+		nextSceneName = scene;
+		fadeOnStart = false;
 		exitLevel = true;
 	}
 	void Fade () {
 
 		if (fadeOnStart) {
-			if (screenWarp.fade > transitionSpeed) {
-				screenWarp.fade -= transitionSpeed;
+			if (screenWarp.fade > 0) {
+				screenWarp.fade -= fadeSpeed * Time.deltaTime;
 			} else {
 				screenWarp.fade = 0;
 				fadeOnStart = false;
@@ -56,9 +62,17 @@ public class ScreenEffect : MonoBehaviour {
 		}
 
 		if (fadeOnExit) {
-			screenWarp.fade += transitionSpeed;
+			screenWarp.fade += fadeSpeed * Time.deltaTime;
 			if (screenWarp.fade > 1) {
-				SceneManager.LoadScene ("Transition");
+
+				if (nextSceneName == "none") { // if none then load new scene
+
+					nextSceneName = settings.scenes[Random.Range (0, settings.scenes.Count)];
+					while (nextSceneName == SceneManager.GetActiveScene ().name) {
+						nextSceneName = settings.scenes[Random.Range (0, settings.scenes.Count)];
+					}
+				} // if not none then load what needs to be loaded!
+				SceneManager.LoadScene (nextSceneName);
 			}
 		}
 	}
@@ -70,15 +84,15 @@ public class ScreenEffect : MonoBehaviour {
 
 		if (dist < 170) {
 			newTransValue = 0.01f;
-			transition -= (transition - newTransValue) / 200; //transition effect speed
+			transition -= (transition - newTransValue) / screenEffectTimer * Time.deltaTime; //transition effect speed
 		}
 		if (dist > 170 && dist < 178) {
 			newTransValue = screenWarp.transitionEnterValue;
-			transition -= (transition - newTransValue) / 50; //transition effect speed
+			transition -= (transition - newTransValue) / screenEffectWarningTimer * Time.deltaTime; //transition effect speed
 		}
 		if (dist > 178) {
 			newTransValue = screenWarp.transitionExitValue;
-			transition -= (transition - newTransValue) / 200; //transition effect speed
+			transition -= (transition - newTransValue) / screenEffectTimer * Time.deltaTime; //transition effect speed
 			fadeOnExit = true;
 		}
 
@@ -99,6 +113,13 @@ public class ScreenEffect : MonoBehaviour {
 		else m_material.SetFloat ("_rotationspeed", 0);
 
 		Graphics.Blit (source, destination, m_material);
+	}
+
+	void Debug () {
+		if (Input.GetKeyDown (KeyCode.Escape)) {
+			fadeOnStart = false;
+			exitLevel = true;
+		}
 	}
 
 }
