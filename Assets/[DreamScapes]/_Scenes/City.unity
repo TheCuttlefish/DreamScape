@@ -6002,6 +6002,38 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114366928719860798, guid: 271635b97a6ad544bac5f45fa7d13356,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7edc473b6638dd246a529fe1533c135a,
+        type: 3}
+    - target: {fileID: 114171800363062694, guid: 271635b97a6ad544bac5f45fa7d13356,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 0.234
+      objectReference: {fileID: 0}
+    - target: {fileID: 114366928719860798, guid: 271635b97a6ad544bac5f45fa7d13356,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 0.247
+      objectReference: {fileID: 0}
+    - target: {fileID: 114171800363062694, guid: 271635b97a6ad544bac5f45fa7d13356,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7bc580d8688df204e8b1e21e33fd9f9a,
+        type: 3}
+    - target: {fileID: 224821797377323462, guid: 271635b97a6ad544bac5f45fa7d13356,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 224821797377323462, guid: 271635b97a6ad544bac5f45fa7d13356,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 271635b97a6ad544bac5f45fa7d13356, type: 2}
   m_IsPrefabParent: 0
@@ -46648,7 +46680,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1118105536
+  randomSeed: -903461325
   InitialModule:
     serializedVersion: 3
     enabled: 1

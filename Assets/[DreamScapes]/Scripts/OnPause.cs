@@ -28,7 +28,7 @@ public class OnPause : MonoBehaviour {
 
 	public void Update () {
 		if (fadeIn) {
-			if (GetComponent<CanvasGroup> ().alpha < 0.15f) {
+			if (GetComponent<CanvasGroup> ().alpha < 0.5f) {
 				GetComponent<CanvasGroup> ().alpha += fadeInSpeed * Time.deltaTime;
 			} else {
 				fadeIn = false;
