@@ -8,7 +8,7 @@ public class LogoEffect : MonoBehaviour {
 	public float logoAlpha;
 
 	string transitionState = "start";
-	int waitTimer = 600;
+	float waitTimer = 5;
 	Renderer rend;
 	void Awake () {
 		logoAlpha = 1;
@@ -22,7 +22,7 @@ public class LogoEffect : MonoBehaviour {
 
 		if (transitionState == "start") {
 			if (logoAlpha > 0.1f) {
-				logoAlpha -= 0.0005f;
+				logoAlpha -= 0.2f * Time.deltaTime;
 			} else {
 				transitionState = "wait";
 			}
@@ -30,7 +30,7 @@ public class LogoEffect : MonoBehaviour {
 
 		if (transitionState == "wait") {
 			if (waitTimer > 0) {
-				waitTimer--;
+				waitTimer -= 1*Time.deltaTime;
 			} else {
 				transitionState = "fadeOut";
 			}
@@ -38,7 +38,7 @@ public class LogoEffect : MonoBehaviour {
 
 		if (transitionState == "fadeOut") {
 			if (logoAlpha < 0.90f) {
-				logoAlpha += 0.0005f;
+				logoAlpha += 0.1f * Time.deltaTime;
 			} else {
 				//Destroy(gameObject);
 			}

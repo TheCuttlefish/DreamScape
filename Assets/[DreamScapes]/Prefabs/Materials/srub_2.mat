@@ -75,10 +75,10 @@ Material:
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
-    - _amounty: 0.95
-    - _movey: 0.47
+    - _amounty: 1.13
+    - _movey: 0.56
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Roots: {r: 0.69803923, g: 0.62352943, b: 0.30980393, a: 1}
-    - _Tip: {r: 0.1544118, g: 0.092647076, b: 0, a: 1}
+    - _Roots: {r: 0.7843138, g: 0.7176471, b: 0.627451, a: 1}
+    - _Tip: {r: 0.52205884, g: 0.40382788, b: 0.22648141, a: 1}

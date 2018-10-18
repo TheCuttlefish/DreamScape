@@ -40,7 +40,7 @@ public class ScreenEffect : MonoBehaviour {
 		Debug ();
 		if (exitLevel) {
 			newTransValue = screenWarp.transitionExitValue;
-			transition -= (transition - newTransValue) / 200; //transition effect speed
+			transition -= (transition - newTransValue) / 2 * Time.deltaTime; //transition effect speed
 			fadeOnExit = true;
 		}
 	}
@@ -83,8 +83,9 @@ public class ScreenEffect : MonoBehaviour {
 		float dist = Vector3.Distance (player.transform.position, Vector3.zero);
 
 		if (dist < 170) {
-			newTransValue = 0.01f;
+			newTransValue = 0.00f;
 			transition -= (transition - newTransValue) / screenEffectTimer * Time.deltaTime; //transition effect speed
+		
 		}
 		if (dist > 170 && dist < 178) {
 			newTransValue = screenWarp.transitionEnterValue;
@@ -113,6 +114,7 @@ public class ScreenEffect : MonoBehaviour {
 		else m_material.SetFloat ("_rotationspeed", 0);
 
 		Graphics.Blit (source, destination, m_material);
+
 	}
 
 	void Debug () {

@@ -333,7 +333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d908193a717c744d87b97d103ec1e6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transition: 0.010000005
+  transition: 0.99
   screenWarp: {fileID: 11400000, guid: 4952cde4fa1b8314e87353298d6e0775, type: 2}
   settings: {fileID: 11400000, guid: c774a6015c655b645b000e7537e4dfe6, type: 2}
 --- !u!114 &476871989

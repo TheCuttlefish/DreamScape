@@ -333,7 +333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d908193a717c744d87b97d103ec1e6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transition: 1
+  transition: 0.29948846
   screenWarp: {fileID: 11400000, guid: 4952cde4fa1b8314e87353298d6e0775, type: 2}
   settings: {fileID: 11400000, guid: c774a6015c655b645b000e7537e4dfe6, type: 2}
 --- !u!114 &476871989
@@ -1556,7 +1556,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Islands
+          m_StringArgument: City
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,

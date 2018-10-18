@@ -106,7 +106,7 @@ Material:
     - _emission: 0.199
     - _movey: 0
     - _node_3627: 0
-    - _node_4581: 0.03
+    - _node_4581: 0.1
     - _node_8284: 0.1081898
     - _noise: 5
     - _outlinethickness: 0.1111111

@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 4f974fe0564e00e4e84dadec0fbfe8ba
+timeCreated: 1539554926
+licenseType: Free
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _aurora: {fileID: 2800000, guid: 863a8abfd178e01499f378297c9d5f49, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

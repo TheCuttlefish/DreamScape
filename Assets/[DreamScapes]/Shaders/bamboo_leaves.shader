@@ -1,7 +1,7 @@
 // Shader created with Shader Forge v1.38 
 // Shader Forge (c) Neat Corporation / Joachim Holmer - http://www.acegikmo.com/shaderforge/
 // Note: Manually altering this data may prevent you from opening it in Shader Forge
-/*SF_DATA;ver:1.38;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,cgin:,lico:1,lgpr:1,limd:1,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:False,hqlp:False,rprd:False,enco:False,rmgx:True,imps:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:2,bsrc:0,bdst:1,dpts:2,wrdp:True,dith:0,atcv:False,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:False,qofs:0,qpre:2,rntp:3,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,atwp:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False,fsmp:False;n:type:ShaderForge.SFN_Final,id:4013,x:32719,y:32712,varname:node_4013,prsc:2|diff-1304-RGB,emission-4390-OUT,clip-9089-A,voffset-1180-OUT;n:type:ShaderForge.SFN_Color,id:1304,x:32310,y:32601,ptovrint:False,ptlb:Color,ptin:_Color,varname:node_1304,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0.3655173,c2:1,c3:0,c4:1;n:type:ShaderForge.SFN_Slider,id:4390,x:32130,y:32771,ptovrint:False,ptlb:emission,ptin:_emission,varname:node_4390,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.1538462,max:1;n:type:ShaderForge.SFN_Tex2dAsset,id:3581,x:32208,y:32901,ptovrint:False,ptlb:texture,ptin:_texture,varname:node_3581,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:cde8d0eaf9e89734ab7261bebd8b1f94,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Tex2d,id:9089,x:32372,y:32861,varname:node_9089,prsc:2,tex:cde8d0eaf9e89734ab7261bebd8b1f94,ntxv:0,isnm:False|TEX-3581-TEX;n:type:ShaderForge.SFN_Vector3,id:3337,x:32041,y:33086,varname:node_3337,prsc:2,v1:0,v2:0,v3:0;n:type:ShaderForge.SFN_Add,id:1180,x:32526,y:33084,varname:node_1180,prsc:2|A-3337-OUT,B-3369-OUT;n:type:ShaderForge.SFN_Cos,id:357,x:32041,y:33186,varname:node_357,prsc:2|IN-6453-T;n:type:ShaderForge.SFN_Time,id:6453,x:31844,y:33172,varname:node_6453,prsc:2;n:type:ShaderForge.SFN_Multiply,id:3369,x:32236,y:33204,varname:node_3369,prsc:2|A-357-OUT,B-6587-OUT,C-4581-OUT;n:type:ShaderForge.SFN_Vector3,id:6587,x:31938,y:33378,varname:node_6587,prsc:2,v1:0,v2:0,v3:1;n:type:ShaderForge.SFN_Slider,id:4581,x:31860,y:33490,ptovrint:False,ptlb:node_4581,ptin:_node_4581,varname:node_4581,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.0826562,max:1;proporder:1304-4390-3581-4581;pass:END;sub:END;*/
+/*SF_DATA;ver:1.38;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,cgin:,lico:1,lgpr:1,limd:1,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:False,hqlp:False,rprd:False,enco:False,rmgx:True,imps:True,rpth:0,vtps:0,hqsc:False,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:2,bsrc:0,bdst:1,dpts:2,wrdp:True,dith:0,atcv:False,rfrpo:False,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:False,qofs:0,qpre:2,rntp:3,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,atwp:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False,fsmp:False;n:type:ShaderForge.SFN_Final,id:4013,x:32719,y:32712,varname:node_4013,prsc:2|diff-1304-RGB,emission-4390-OUT,clip-9089-A,voffset-1180-OUT;n:type:ShaderForge.SFN_Color,id:1304,x:32310,y:32601,ptovrint:False,ptlb:Color,ptin:_Color,varname:node_1304,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0.3655173,c2:1,c3:0,c4:1;n:type:ShaderForge.SFN_Slider,id:4390,x:32130,y:32771,ptovrint:False,ptlb:emission,ptin:_emission,varname:node_4390,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.1538462,max:1;n:type:ShaderForge.SFN_Tex2dAsset,id:3581,x:32208,y:32901,ptovrint:False,ptlb:texture,ptin:_texture,varname:node_3581,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:cde8d0eaf9e89734ab7261bebd8b1f94,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Tex2d,id:9089,x:32372,y:32861,varname:node_9089,prsc:2,tex:cde8d0eaf9e89734ab7261bebd8b1f94,ntxv:0,isnm:False|TEX-3581-TEX;n:type:ShaderForge.SFN_Vector3,id:3337,x:32041,y:33086,varname:node_3337,prsc:2,v1:0,v2:0,v3:0;n:type:ShaderForge.SFN_Add,id:1180,x:32526,y:33084,varname:node_1180,prsc:2|A-3337-OUT,B-3369-OUT;n:type:ShaderForge.SFN_Cos,id:357,x:32041,y:33186,varname:node_357,prsc:2|IN-6453-T;n:type:ShaderForge.SFN_Time,id:6453,x:31844,y:33172,varname:node_6453,prsc:2;n:type:ShaderForge.SFN_Multiply,id:3369,x:32236,y:33204,varname:node_3369,prsc:2|A-357-OUT,B-6587-OUT,C-4581-OUT;n:type:ShaderForge.SFN_Vector3,id:6587,x:31938,y:33378,varname:node_6587,prsc:2,v1:0,v2:0,v3:1;n:type:ShaderForge.SFN_Slider,id:4581,x:31860,y:33490,ptovrint:False,ptlb:node_4581,ptin:_node_4581,varname:node_4581,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.0826562,max:1;proporder:1304-4390-3581-4581;pass:END;sub:END;*/
 
 Shader "Shader Forge/bamboo_leaves" {
     Properties {
@@ -32,7 +32,7 @@ Shader "Shader Forge/bamboo_leaves" {
             #include "AutoLight.cginc"
             #pragma multi_compile_fwdbase_fullshadows
             #pragma multi_compile_fog
-            #pragma only_renderers d3d9 d3d11 glcore gles 
+            #pragma only_renderers d3d9 d3d11 glcore gles gles3 
             #pragma target 3.0
             uniform float4 _LightColor0;
             uniform float4 _Color;
@@ -113,7 +113,7 @@ Shader "Shader Forge/bamboo_leaves" {
             #include "AutoLight.cginc"
             #pragma multi_compile_fwdadd_fullshadows
             #pragma multi_compile_fog
-            #pragma only_renderers d3d9 d3d11 glcore gles 
+            #pragma only_renderers d3d9 d3d11 glcore gles gles3 
             #pragma target 3.0
             uniform float4 _LightColor0;
             uniform float4 _Color;
@@ -190,7 +190,7 @@ Shader "Shader Forge/bamboo_leaves" {
             #pragma fragmentoption ARB_precision_hint_fastest
             #pragma multi_compile_shadowcaster
             #pragma multi_compile_fog
-            #pragma only_renderers d3d9 d3d11 glcore gles 
+            #pragma only_renderers d3d9 d3d11 glcore gles gles3 
             #pragma target 3.0
             uniform sampler2D _texture; uniform float4 _texture_ST;
             uniform float _node_4581;

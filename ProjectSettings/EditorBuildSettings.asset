@@ -6,29 +6,32 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/[DreamScapes]/_Scenes/Islands.unity
-    guid: b5628140b895a6f49839fc11ae69dfb6
+    path: Assets/[DreamScapes]/_Scenes/MenuScenes/Credits.unity
+    guid: 8cdf4267489555846925ca8dbeb1c4e7
   - enabled: 1
-    path: Assets/[DreamScapes]/_Scenes/Fields.unity
-    guid: 5e635c063cf26c641bac0b5f56a2497b
+    path: Assets/[DreamScapes]/_Scenes/MenuScenes/Instructions.unity
+    guid: f3c938e0092e44147917372d1973bd36
   - enabled: 1
-    path: Assets/[DreamScapes]/_Scenes/Transition.unity
-    guid: 39ac7c0e3bcb8ce4f987f397a984bff8
-  - enabled: 1
-    path: Assets/[DreamScapes]/_Scenes/City.unity
-    guid: 39051cdac68c65c499975b66bfd584fd
-  - enabled: 1
-    path: Assets/[DreamScapes]/_Scenes/Desert.unity
-    guid: efd3994897d22fa4b87e87970d518aaf
+    path: Assets/[DreamScapes]/_Scenes/MenuScenes/TitleScreen.unity
+    guid: 5266eb3f25e7ecb4a92dc73276f2887d
   - enabled: 1
     path: Assets/[DreamScapes]/_Scenes/BambooForest.unity
     guid: d1ac1d5792e25894790221d98ef8319b
   - enabled: 1
-    path: Assets/[DreamScapes]/_Scenes/TitleScreen.unity
-    guid: 5266eb3f25e7ecb4a92dc73276f2887d
+    path: Assets/[DreamScapes]/_Scenes/City.unity
+    guid: 39051cdac68c65c499975b66bfd584fd
   - enabled: 1
-    path: Assets/[DreamScapes]/_Scenes/Credits.unity
-    guid: 8cdf4267489555846925ca8dbeb1c4e7
+    path: Assets/[DreamScapes]/_Scenes/CityEve.unity
+    guid: 3620e3718d6b5e947b7f4ac4fdf68b10
   - enabled: 1
-    path: Assets/[DreamScapes]/_Scenes/Instructions.unity
-    guid: f3c938e0092e44147917372d1973bd36
+    path: Assets/[DreamScapes]/_Scenes/Desert.unity
+    guid: efd3994897d22fa4b87e87970d518aaf
+  - enabled: 1
+    path: Assets/[DreamScapes]/_Scenes/Fields.unity
+    guid: 5e635c063cf26c641bac0b5f56a2497b
+  - enabled: 1
+    path: Assets/[DreamScapes]/_Scenes/IceCaps.unity
+    guid: 0942124908dca5d4d86c0453f76a364f
+  - enabled: 1
+    path: Assets/[DreamScapes]/_Scenes/Islands.unity
+    guid: b5628140b895a6f49839fc11ae69dfb6

@@ -11,13 +11,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 000fa2304b05b794f8c08a18edefd50e, type: 3}
   m_Name: kaleidoscopic
   m_EditorClassIdentifier: 
-  screenMap: {fileID: 2800000, guid: cb4e3978c952b384fbf8581ee9b5d21f, type: 3}
-  noiseMap: {fileID: 2800000, guid: ac3d03b427beb5246b129bb38e2a30cf, type: 3}
+  screenMap: {fileID: 2800000, guid: f68eeff1477aa3240b7a44fbdc0dbeb9, type: 3}
+  noiseMap: {fileID: 2800000, guid: e04667e5f9318ab4eac0dd8b509d9b53, type: 3}
   rotation: 1
   rotationSpeed: 0.128
   uvWarp: 0.443
   fadeColour: {r: 0, g: 0, b: 0, a: 1}
-  fade: 0.99700004
+  fade: 1
   transitionEnterValue: 0.194
   transitionExitValue: 1
   screenMode: 0

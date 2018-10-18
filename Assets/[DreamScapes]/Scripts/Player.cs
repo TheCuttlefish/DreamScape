@@ -4,11 +4,6 @@ using UnityEngine;
 
 public class Player : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-
-	}
-
 	public float moveForward = 0;
 
 	bool accelerate = false;
@@ -16,21 +11,26 @@ public class Player : MonoBehaviour {
 
 	public float maxSpeed = 0.01f;
 
-	void Movement () {
+	public void MoveForward () {
+		accelerate = true;
+	}
 
-		if (Input.GetKey (KeyCode.LeftShift) || Input.GetAxis ("RightTrigger") < -.5f) {
+	public void MoveForwardStop () {
+		accelerate = false;
+	}
 
-			accelerate = true;
-
-		} else {
-			accelerate = false;
-
+	void MovementControl () {
+		if (Input.GetKeyUp (KeyCode.LeftShift) || Input.GetAxis ("RightTrigger") < -.5f) {
+			accelerate = !accelerate;
 		}
 
+	}
+	void Movement () {
+
 		if (accelerate) {
-			moveForward -= (moveForward - maxSpeed) / 10;
+			moveForward -= (moveForward - maxSpeed) / 0.1f * Time.deltaTime;
 		} else {
-			moveForward -= (moveForward - 0) / 50;
+			moveForward -= (moveForward - 0) / 0.5f * Time.deltaTime;
 		}
 
 		transform.Translate (0, 0, moveForward, Space.Self);
@@ -39,6 +39,10 @@ public class Player : MonoBehaviour {
 		//correction
 		transform.Rotate (Vector3.Dot (Vector3.up, transform.forward) / 10, 0, Vector3.Dot (Vector3.up, -transform.right) / 2);
 		//transform.Rotate (0,Vector3.Dot (Vector3.forward, transform.right), 0); // - code for left right correction
+	}
+
+	void Update () {
+		MovementControl ();
 	}
 
 	void FixedUpdate () {
