@@ -80,8 +80,8 @@ Shader "Shader Forge/Overlay" {
                 float3 viewReflectDirection = reflect( -viewDirection, normalDirection );
 ////// Lighting:
 ////// Emissive:
-                float4 node_294 = _Time;
-                float node_6628_ang = node_294.g;
+                float4 node_3118 = _Time;
+                float node_6628_ang = node_3118.g;
                 float node_6628_spd = _rotationspeed;
                 float node_6628_cos = cos(node_6628_spd*node_6628_ang);
                 float node_6628_sin = sin(node_6628_spd*node_6628_ang);
@@ -163,8 +163,8 @@ Shader "Shader Forge/Overlay" {
                 float3 viewReflectDirection = reflect( -viewDirection, normalDirection );
 ////// Lighting:
 ////// Emissive:
-                float4 node_8861 = _Time;
-                float node_6628_ang = node_8861.g;
+                float4 node_7409 = _Time;
+                float node_6628_ang = node_7409.g;
                 float node_6628_spd = _rotationspeed;
                 float node_6628_cos = cos(node_6628_spd*node_6628_ang);
                 float node_6628_sin = sin(node_6628_spd*node_6628_ang);

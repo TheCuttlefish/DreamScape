@@ -333,7 +333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d908193a717c744d87b97d103ec1e6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transition: 1
+  transition: 0.099509194
   screenWarp: {fileID: 11400000, guid: 4952cde4fa1b8314e87353298d6e0775, type: 2}
   settings: {fileID: 11400000, guid: c774a6015c655b645b000e7537e4dfe6, type: 2}
 --- !u!114 &476871989
@@ -1314,24 +1314,15 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 3
     m_MaxSize: 52
-    m_Alignment: 1
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Credits:
+  m_Text: '<color=#ffdc83>Game Design : :</color> Zhan Gurskis
 
-    Game Design: Zhan Gurskis
-
-    Sound Design: Aiste No
-
-    Playtesters: Name Supername, Name Supername, Name Supername, Name Supername, Name
-    Supername, Name Supername, Name Supername, Name Supername, Name Supername, Name
-    Supername, Name Supername, Name Supername, Name Supername, Name Supername, Name
-    Supername, Name Supername, Name Supername, Name Supername, Name Supername, Name
-    Supername, Name Supername, Name Supername, Name Supername, Name Supername, Name
-    Supername, Name Supername, '
+    <color=#ffdc83>Playtesters : :</color>  Rodrigo Hamuy, Taylor Adams, Nadi Adem...'
 --- !u!222 &1981201114
 CanvasRenderer:
   m_ObjectHideFlags: 0
