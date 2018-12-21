@@ -28,6 +28,7 @@ public class WayPoint : MonoBehaviour {
 	public void Hide () {
 		GetComponent<Renderer> ().enabled = false;
 		GetComponent<Collider> ().enabled = false;
+		alpha = 0;
 	}
 
 	void OnMouseDown () {
